@@ -3,12 +3,12 @@
 }
 
 #stats-box {
-	
 	height: 200px;
 	margin-top: 140px;
 	background-color: rgb(50,50,50);
 	padding: 15px 0 0 0;
-	max-width: 50%;
+	max-width: 100%;
+	display: block;
 }
 
 #stats {
