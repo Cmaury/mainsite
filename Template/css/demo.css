@@ -1,25 +1,3 @@
-.team {
-	padding-bottom: 10px;
-}
-
-#stats-box {
-	height: 200px;
-	margin-top: 140px;
-	background-color: rgb(50,50,50);
-	padding: 15px 0 0 0;
-	max-width: 100%;
-	display: block;
-}
-
-#stats {
-}
-
-.inverted {
-  color: rgb(247,248,249);
-  padding-left: 10px;
-  display: inline;
-}
-
 .demo-1 {
 	margin-top: 240px;
 	text-align: right;

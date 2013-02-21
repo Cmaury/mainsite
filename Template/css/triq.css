@@ -145,7 +145,7 @@ body {
   width: 1170px;
 }
 .showcase-container .text-wraper .text {
-  
+  position: absolute;
   max-width: 50%;
 }
 .showcase-container .text-wraper .text p, .showcase-container .text-wraper .text h1, .showcase-container .text-wraper .text h2, .showcase-container .text-wraper .text h3, .showcase-container .text-wraper .text h4, .showcase-container .text-wraper .text h5 {
