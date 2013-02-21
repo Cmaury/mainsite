@@ -136,7 +136,7 @@ body {
 }
 .ul-centered ul li {
   position: relative;
-  left: -50%;
+  left: -57%;
 }
 
 /* $$SHOWCASE */
@@ -814,6 +814,7 @@ a.icon-squared.color-linkedin:hover article {
 
 /* $FONTS */
 /* $$FONT-GLOBALS */
+
 .navbar .nav > li a {
   text-transform: uppercase;
   letter-spacing: 1px;
