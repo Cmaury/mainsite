@@ -19,7 +19,7 @@ app.get('/', function(req, res){
 app.post('/email', function(req,res){
 	console.log('boop')
 	console.log(req.body)
-	fs.appendFile("emails.txt", Date() + " " +JSON.stringify(req.body) + "\n", function(err) {
+	fs.appendFileSync("emails.txt", Date() + " " +JSON.stringify(req.body) + "\n", encoding='utf8', function(err) {
     	if(err) {
         	console.log(err);
         	res.end()
@@ -29,7 +29,7 @@ app.post('/email', function(req,res){
         	res.end()
     	}
 	})
-	return
+	res.end()
 })
 
 app.post('/contact', function(req,res){
@@ -42,7 +42,7 @@ app.post('/contact', function(req,res){
     	} 
     	else {
         	//console.log("The file was saved!");
-     		res.send(200, "does this get passed?")
+     		res.end()
     	}
 	})
 	return
