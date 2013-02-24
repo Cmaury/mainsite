@@ -42,7 +42,7 @@ app.post('/contact', function(req,res){
     	} 
     	else {
         	//console.log("The file was saved!");
-     		res.end()
+     		res.send(200, "does this get passed?")
     	}
 	})
 	return
