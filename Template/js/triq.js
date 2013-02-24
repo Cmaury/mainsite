@@ -27,10 +27,7 @@ jQuery(document).ready(function($) {
     e.preventDefault();
     $.scrollTo('0px', 300);
   })
-
-
 });
-
 
 // Custom sorting plugin
 (function($) {

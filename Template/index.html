@@ -35,9 +35,9 @@
 
         <div class="pull-right">
             <p>
-                <a href="#"><i class="icon-twitter-sign color-twitter"></i></a>
-                <a href="#"><i class="icon-facebook-sign color-facebook"></i></a>
-                <a href="#"><i class="icon-linkedin-sign color-linkedin"></i></a>
+                <a href="#"><i class="icon-twitter-sign color-twitter" title="twitter"></i></a>
+                <a href="#"><i class="icon-facebook-sign color-facebook"title="facebook"></i></a>
+                <a href="#"><i class="icon-linkedin-sign color-linkedin" title="LinkedIn"></i></a>
             </p>
         </div>
 
@@ -48,9 +48,9 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/"><img src="logo.png" alt="TRIQ template"></a>
+          <a class="brand" href="/"><img src="logo.png" alt="site logo. Visit Homepage"></a>
           <a href="#footer-nav" class="btn btn-simple visible-phone pull-right">Menu</a>
-          <ul class="nav pull-right hidden-phone">
+          <ul class="nav pull-right hidden-phone" title="Navigation Menu">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             </li>
@@ -71,7 +71,7 @@
               <div class="excerpt">
                 <h1>Reinventing Accessibility.</h1>
                 <p>We build applications tailored to the specific needs of the visually impaired. By putting the blind at the center of the design process we can build products which are easier and faster to use than traditional screen readers.</p>
-                <a href="/about.html/#mission"  class="btn btn-arrow-right btn-simple btn-blue btn-huge pull-right">Read about our mission</a>
+                <a href="/about.html#mission"  class="btn btn-arrow-right btn-simple btn-blue btn-huge pull-right">Read about our mission</a>
               </div>
             </div>
 
@@ -101,11 +101,11 @@
       <!-- Where can you find us -->
       <div class="info-centered">
         <p>Where can you find us?</p>
-        <a href="#" class="icon-squared color-facebook">
+        <a href="#" class="icon-squared color-facebook" title="facebook">
           <article><span><i class="icon-facebook"></i></span></article></a>
-        <a href="#" class="icon-squared color-twitter">
+        <a href="#" class="icon-squared color-twitter" title="twitter">
           <article><span><i class="icon-twitter"></i></span></article></a>
-        <a href="#" class="icon-squared color-pinterest">
+        <a href="#" class="icon-squared color-pinterest" title="LinkedIn">
           <article><span><i class="icon-linkedin"></i></span></article></a>
       </div>  
 
@@ -116,7 +116,7 @@
       <div class="container">
         <p class="pull-right"><a id="toplink" href="#">Back to top</a></p>
 
-        <ul id="footer-nav" class="nav visible-phone">
+        <ul id="footer-nav" class="nav visible-phone" title="Navigation Menu">
           <hr>
           <h3 class="centered">Menu</h3>
           <li class="active"><a href="index.html">Home</a></li>
@@ -135,18 +135,21 @@
         <h3 id="myModalLabel" class="centered">Sign Up</h3>
       </div>
       <div class="modal-body">
-        <form class="form-horizontal">
+        <div id="form_alert" class="alert" style="display:none" message="All Done! thanks for signing up!">
+                <p id="form_alert_message"></p>
+        </div>        
+        <form class="form-horizontal" action="email" method="post" >
           <div class="control-group">
             <label class="control-label" for="inputEmail">Email</label>
             <div class="controls">
-              <input type="text" id="inputEmail" placeholder="Email">
+              <input type="text" id="inputEmail" name="email" placeholder="Email">
             </div>
           </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            <button type="submit" class="btn btn-info">Sign Up</button>
+          </div>
         </form>
-      </div>
-      <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-        <button type="submit" class="btn btn-info">Register</button>
       </div>
     </div>
 
@@ -158,6 +161,6 @@
     <script src="js/jquery.scrollto-1.4.3.1-min.js"></script>  
     <script src="js/jquery.localscroll-1.2.7-min.js"></script>
     <script src="js/triq.js"></script>
-
+    <script type="text/javascript" src="js/js.js"></script>
   </body>
 </html>

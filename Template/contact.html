@@ -35,9 +35,9 @@
 
         <div class="pull-right">
             <p>
-                <a href="#"><i class="icon-twitter-sign color-twitter"></i></a>
-                <a href="#"><i class="icon-facebook-sign color-facebook"></i></a>
-                <a href="#"><i class="icon-linkedin-sign color-linkedin"></i></a>
+                <a href="#"><i class="icon-twitter-sign color-twitter" title="twitter"></i></a>
+                <a href="#"><i class="icon-facebook-sign color-facebook"title="facebook"></i></a>
+                <a href="#"><i class="icon-linkedin-sign color-linkedin" title="LinkedIn"></i></a>
             </p>
         </div>
 
@@ -50,7 +50,7 @@
         <div class="container">
           <a class="brand" href="/"><img src="logo.png" alt="TRIQ template"></a>
           <a href="#footer-nav" class="btn btn-simple visible-phone pull-right">Menu</a>
-          <ul class="nav pull-right hidden-phone">
+          <ul class="nav pull-right hidden-phone" title="Navigation Menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
@@ -60,7 +60,7 @@
       </div>
     </div>
 
-     <iframe id="contact-map" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=37.7655,-122.4183&amp;spn=1.222794,2.705383&amp;t=m&amp;z=13&amp;output=embed"></iframe>
+     <iframe id="contact-map" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=37.7655,-122.4183&amp;spn=1.222794,2.705383&amp;t=m&amp;z=13&amp;output=embed" title="Google Maps - Location San Francisco"></iframe>
     <div id="contact" style="position: relative; top: -50px;"></div>
     <div class="container">
 
@@ -102,11 +102,14 @@
 								<h2>Contact form</h2>
 								<p>We want to hear from you! Use the form below to get in touch.</p>
 							</div>
-							<form action="post" class="">
+              <div id="form_alert" class="alert" style="display:none" message="Message Sent">
+                <p id="form_alert_message"></p>
+              </div>
+							<form action="contact" class="" method="post">
 								<label for="name"><p>Your name</p></label>
-								<input type="text" id="name">
+								<input type="text" id="name" name="name">
 								<label for="email"><p>Your email</p></label>
-								<input type="text" id="email">
+								<input type="text" id="email" name="email">
 								<label for="message"><p>Your message</p></label>
 								<textarea name="message" id="message" cols="30" rows="10" class="span4" placeholder="Type here..."></textarea>
 								<br>
@@ -125,7 +128,7 @@
       <div class="container">
         <p class="pull-right"><a id="toplink" href="#">Back to top</a></p>
 
-        <ul id="footer-nav" class="nav visible-phone">
+        <ul id="footer-nav" class="nav visible-phone" title="Navigation Menu">
           <hr>
           <h3 class="centered">Menu</h3>
           <li class="active"><a href="index.html">Home</a></li>
@@ -144,6 +147,6 @@
     <script src="js/jquery.scrollto-1.4.3.1-min.js"></script>  
     <script src="js/jquery.localscroll-1.2.7-min.js"></script>
     <script src="js/triq.js"></script>
-
+    <script type="text/javascript" src="js/js.js"></script>
   </body>
 </html>
