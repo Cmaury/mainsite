@@ -5,7 +5,7 @@ $("form").submit(function(e) {
         $this.attr("action"),
         $this.serialize(),
         function(data) {
-        	console.log('did this work?')
+        	console.log(data)
         	form_alert.style.display = 'block'
         	form_alert_message.innerHTML = form_alert.getAttribute("message")
         },

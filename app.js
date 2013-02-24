@@ -41,8 +41,8 @@ app.post('/contact', function(req,res){
         	res.end()
     	} 
     	else {
-        	console.log("The file was saved!");
-        	res.end()
+        	//console.log("The file was saved!");
+     		res.end()
     	}
 	})
 	return
