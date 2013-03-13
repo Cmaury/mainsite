@@ -830,7 +830,8 @@ h1, h2, h3, h4, h5 {
 
 p {
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 26px;
+  line-height: 32px;
 }
 
 .centered {
@@ -890,9 +891,17 @@ h2.page-header {
   font-size: 36px;
 }
 .featured p {
-  font-size: 18px;
+  font-size: 26px;
   font-family: 'PT Sans', Helvetica, sans-serif;
   line-height: 32px;
+}
+.team p {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.featured a {
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 }
 
 .testimonials h1, .testimonials h2, .testimonials h3, .testimonials h4, .testimonials h5 {
